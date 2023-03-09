@@ -1,13 +1,4 @@
-/**
-* Template Name: HeroBiz - v2.4.0
-* Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/**
-* Check out variables.css for easy customization of colors, typography, and other repetitive properties
-*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -272,7 +263,10 @@ section {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--color-white);
-  background: rgba(var(--color-primary-rgb), 0.85);
+  background: var(--color-primary-rgb);
+}
+.name-bussines {
+  font-weight: 700;
 }
 
 @media (max-width: 1279px) {
@@ -328,6 +322,10 @@ section {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
+  }
+  .name-bussines-color {
+    font-weight: 600 !important;
+    color: #c8a664 !important;
   }
 
   .navbar>ul>li>a:before {
@@ -639,7 +637,7 @@ section {
 }
 
 .hero-animated .btn-get-started:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: var(--color-primary-rgb);
 }
 
 .hero-animated .btn-watch-video {
@@ -1004,7 +1002,7 @@ section {
 }
 
 .hero-fullscreen .btn-get-started:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: var(--color-primary-rgb);
 }
 
 .hero-fullscreen .btn-watch-video {
@@ -1092,7 +1090,7 @@ section {
 }
 
 .hero-static .btn-get-started:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: var(--color-primary-rgb);
 }
 
 .hero-static .btn-watch-video {
@@ -1343,7 +1341,7 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   margin-top: 10px;
-  background: rgba(var(--color-primary-dark-rgb), 0.9);
+  background: var(--color-primary-rgb);
 }
 
 .cta .content .cta-btn:hover {
@@ -1597,7 +1595,7 @@ section {
 
 .features .nav-link.active {
   transition: 0.3s;
-  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  background: var(--color-secondary) linear-gradient(var(--color-primary-rgb), var(--color-primary-rgb));
   border-color: var(--color-primary);
 }
 
@@ -2627,7 +2625,7 @@ section {
 }
 
 .blog .posts-list .read-more a:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: var(--color-primary-rgb);
 }
 
 /*--------------------------------------------------------------
@@ -2872,7 +2870,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: rgba(var(--color-primary-rgb), 0.8);
+  background: var(--color-primary-rgb);
 }
 
 .blog .sidebar .categories ul {
