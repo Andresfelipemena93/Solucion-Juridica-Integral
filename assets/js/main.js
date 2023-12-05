@@ -294,4 +294,15 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+  // Este script asegura que el botón de WhatsApp se mantenga fijo mientras te desplazas por la página.
+
+window.onscroll = function () {
+  var whatsappButton = document.getElementById("whatsapp-button");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      whatsappButton.style.bottom = "10px";
+  } else {
+      whatsappButton.style.bottom = "20px";
+  }
+};
+
 });

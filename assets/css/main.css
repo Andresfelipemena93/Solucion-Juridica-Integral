@@ -280,6 +280,31 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation 
 --------------------------------------------------------------*/
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#whatsapp-button a {
+  display: block;
+  padding: 10px;
+  background-color: #25D366; /* Color de fondo de WhatsApp */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+#whatsapp-button img {
+  width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Desktop Navigation 
+--------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
