@@ -101,7 +101,7 @@
     </header>
     <!-- End Header -->
 
-    <a href="https://wa.me/573117556389?text=Me%20gustaría%20recibir%20una%20asesoria%20del%20virtual" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
 
     <section
       id="hero-fullscreen"
@@ -137,7 +137,31 @@
         </div>
       </div>
     </section>
+ <!-- Mensaje emergente y fondo oscuro de fondo -->
+ <div id="overlay"></div>
+ <div id="popup">
+     <p class="popuptext">¡Tenemos excelentes noticias!</p>
+     <p>¡Emocionados de anunciar nuestra nueva alianza con Corjuridicos para la apertura de nuestro Centro de Conciliación. ¡Bienvenidos a un espacio de soluciones y armonía ubicado en Yarumal Antioquia! 🤝⚖️</p>
+     <button class="btnpopup" onclick="cerrarPopup()">Cerrar</button>
+ </div>
 
+ <!-- Script JavaScript para controlar el mensaje emergente -->
+ <script>
+     // Función para mostrar el mensaje emergente después de 8 segundos
+     setTimeout(function() {
+         mostrarPopup();
+     }, 8000);
+
+     function mostrarPopup() {
+         document.getElementById('overlay').style.display = 'block';
+         document.getElementById('popup').style.display = 'block';
+     }
+
+     function cerrarPopup() {
+         document.getElementById('overlay').style.display = 'none';
+         document.getElementById('popup').style.display = 'none';
+     }
+ </script>
     <main id="main">
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
@@ -240,9 +264,10 @@
       <!-- End About Section -->
 
       <!-- ======= Clients Section ======= -->
-      <!-- <section id="clients" class="clients">
+       <!-- <section id="clients" class="clients">
         <div class="container" data-aos="zoom-out">
           <div class="clients-slider swiper">
+            <h2 class="name-bussines-color">Aliados Estrategicos</h2>
             <div class="swiper-wrapper align-items-center">
               <div class="swiper-slide">
                 <img
@@ -303,7 +328,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>  -->
       <!-- End Clients Section -->
 
       <!-- ======= Call To Action Section ======= -->
