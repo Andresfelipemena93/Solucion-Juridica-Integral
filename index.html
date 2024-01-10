@@ -142,26 +142,10 @@
  <div id="popup">
      <p class="popuptext">¡Tenemos excelentes noticias!</p>
      <p>¡Emocionados de anunciar nuestra nueva alianza con Corjuridicos para la apertura de nuestro Centro de Conciliación. ¡Bienvenidos a un espacio de soluciones y armonía ubicado en Yarumal Antioquia! 🤝⚖️</p>
-     <button class="btnpopup" onclick="cerrarPopup()">Cerrar</button>
+     <button class="btnpopup" id="cerrarBtn">Cerrar</button>
  </div>
 
- <!-- Script JavaScript para controlar el mensaje emergente -->
- <script>
-     // Función para mostrar el mensaje emergente después de 8 segundos
-     setTimeout(function() {
-         mostrarPopup();
-     }, 8000);
 
-     function mostrarPopup() {
-         document.getElementById('overlay').style.display = 'block';
-         document.getElementById('popup').style.display = 'block';
-     }
-
-     function cerrarPopup() {
-         document.getElementById('overlay').style.display = 'none';
-         document.getElementById('popup').style.display = 'none';
-     }
- </script>
     <main id="main">
       <!-- ======= About Section ======= -->
       <section id="about" class="about">

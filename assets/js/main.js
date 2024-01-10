@@ -260,6 +260,26 @@ document.addEventListener('DOMContentLoaded', () => {
       clickable: true
     }
   });
+// Función para mostrar el mensaje emergente después de 8 segundos
+setTimeout(function() {
+  mostrarPopup();
+}, 8000);
+
+function mostrarPopup() {
+  document.getElementById('overlay').style.display = 'block';
+  document.getElementById('popup').style.display = 'block';
+
+  // Agrega un event listener al botón de cerrar
+  document.getElementById('cerrarBtn').addEventListener('click', cerrarPopup);
+}
+
+function cerrarPopup() {
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('popup').style.display = 'none';
+
+  // Remueve el event listener después de cerrar el popup (opcional)
+  document.getElementById('cerrarBtn').removeEventListener('click', cerrarPopup);
+}
 
   /**
    * Testimonials Slider
