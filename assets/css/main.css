@@ -166,6 +166,39 @@ section {
   }
 }
 
+/* privacidad */
+
+.titleppn {
+  margin-top: 13rem;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+.titleppn2{
+  color: #c8a664;
+  margin-top: 0.5rem;
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+
+.subtitles{
+  color: #c8a664;
+  margin-top: 0.5rem;
+  font-size: 19px;
+  text-align: left;
+  font-weight: 700;
+}
+.acomp{
+  color: #c8a664;
+}
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
